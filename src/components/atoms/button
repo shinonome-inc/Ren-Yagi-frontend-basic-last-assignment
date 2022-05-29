@@ -1,0 +1,5 @@
+<a link href="#">
+    <button type="button" class="btn-dark">
+        <p>テキスト</p>
+    </button>
+</a>

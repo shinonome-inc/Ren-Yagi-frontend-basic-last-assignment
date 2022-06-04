@@ -1,15 +1,33 @@
-.btn-dark {
-  width: 180px;
-  height: 45px;
-}
-.btn-dark:hover {
-  background: #442606;
-}
-p {
-  font-size: 14px;
-  color: #ffffff;
-  padding: 9px 0;
+$breakPoints: (
+  "large": 1050px,
+  "medium": 800px,
+  "small": 600px,
+);
+@mixin mq($breakPoint) {
+  @media screen and (max-width:#{map-get($breakPoints, $breakPoint)}) {
+    @content;
+  }
 }
 a {
-  color: #ffffff;
+  .btn-dark {
+    font-family: "Noto Sans JP";
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    @include mq(large) {
+      width: 200px;
+      height: 55px;
+    }
+    @include mq(medium) {
+      width: 150px;
+      height: 55px;
+    }
+    @include mq(small) {
+      width: 180px;
+      height: 45px;
+    }
+  }
+  .btn-dark:hover {
+    background: #442606;
+  }
 }

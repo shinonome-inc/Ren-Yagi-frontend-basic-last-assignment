@@ -1,33 +1,27 @@
-$breakPoints: (
-  "large": 1050px,
-  "medium": 800px,
-  "small": 600px,
-);
-@mixin mq($breakPoint) {
-  @media screen and (max-width:#{map-get($breakPoints, $breakPoint)}) {
-    @content;
+@use "../../variables" as *;
+span {
+  font-family: "Noto Sans jp";
+  text-align: center;
+  font-size: $fontsize-s;
+  line-height: 20px;
+  background-color: $black;
+  color: $white;
+  @media screen and (min-width: $breakpoint-lg) {
+    width: 200px;
+    height: 55px;
+    padding: 17.5px 74px;
   }
-}
-a {
-  .btn-dark {
-    font-family: "Noto Sans JP";
-    text-align: center;
-    font-size: 14px;
-    line-height: 20px;
-    @include mq(large) {
-      width: 200px;
-      height: 55px;
-    }
-    @include mq(medium) {
-      width: 150px;
-      height: 55px;
-    }
-    @include mq(small) {
-      width: 180px;
-      height: 45px;
-    }
+  @media screen and (max-width: $breakpoint-lg) and (min-width: $breakpoint-md) {
+    width: 150px;
+    height: 55px;
+    padding: 17.5px 49px;
   }
-  .btn-dark:hover {
-    background: #442606;
+  @media screen and (max-width: $breakpoint-md) {
+    width: 180px;
+    height: 45px;
+    padding: 12.5px 64px;
+  }
+  &:hover {
+    background: $black_50;
   }
 }

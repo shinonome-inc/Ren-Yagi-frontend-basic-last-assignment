@@ -1,22 +1,16 @@
 @use "../../variables" as *;
-a {
+.button {
   font-family: $fontfamily-gothic;
   text-align: center;
   font-size: $fontsize-s;
   line-height: 20px;
   background-color: $black;
   color: $white;
-  width: 200px;
-  height: 55px;
   padding: 17.5px 74px;
   @media screen and (max-width: $breakpoint-lg) {
-    width: 150px;
-    height: 55px;
     padding: 17.5px 49px;
   }
   @media screen and (max-width: $breakpoint-md) {
-    width: 180px;
-    height: 45px;
     padding: 12.5px 64px;
   }
   &:hover {

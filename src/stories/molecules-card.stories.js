@@ -1,6 +1,6 @@
-import Item_Card2 from "../components/molecules/card2/card2.html";
-import "../components/molecules/card2/card2.scss";
+import Item_Card from "../components/molecules/card/card.html";
+import "../components/molecules/card/card.scss";
 
-export default { title: "Molecules/Card2" };
+export default { title: "Molecules/Card" };
 
-export const Example = () => Item_Card2;
+export const Example = () => Item_Card;

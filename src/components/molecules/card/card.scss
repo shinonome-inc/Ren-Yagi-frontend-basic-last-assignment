@@ -1,0 +1,83 @@
+@use "../../variables" as *;
+.card-consept {
+  position: relative;
+  left: 4px;
+  z-index: 1;
+  font-size: $fontsize-l;
+  font-family: $fontfamily-gothic;
+  color: $orange_bistre;
+}
+.card {
+  position: absolute;
+  top: 10px;
+  width: 540px;
+  height: auto;
+  text-align: center;
+  font-family: $fontfamily-gothic;
+  @media screen and (max-width: $breakpoint-lg) {
+    width: 268px;
+    height: auto;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    width: 224px;
+    height: auto;
+  }
+  .card-img {
+    background-image: url(../../../img/card-1.jpg);
+    background-size: 540px 382.41px;
+    width: 540px;
+    height: 382.41px;
+    @media screen and (max-width: $breakpoint-lg) {
+      background-size: 268px 203.74px;
+      width: 268px;
+      height: 203.74px;
+    }
+    @media screen and (max-width: $breakpoint-md) {
+      background-size: 224px 175.27px;
+      width: 224px;
+      height: 175.27px;
+    }
+    .card-triangle {
+      width: 0;
+      border-top: solid 150px $white;
+      border-right: solid 150px transparent;
+    }
+  }
+  .card-text {
+    font-size: $fontsize-s;
+    margin: 32px 241px 47.5px 241px;
+    @media screen and (max-width: $breakpoint-lg) {
+      margin: 32px 83px 30px 83px;
+    }
+    @media screen and (max-width: $breakpoint-md) {
+      margin: 32px 83px 30px 83px;
+    }
+  }
+  a {
+    font-size: $fontsize-s;
+    line-height: 20px;
+    background-color: $black;
+    color: $white;
+    width: 200px;
+    height: 55px;
+    padding: 17.5px 74px;
+    margin: auto;
+    margin-bottom: 32px;
+    @media screen and (max-width: $breakpoint-lg) {
+      width: 150px;
+      height: 55px;
+      padding: 17.5px 49px;
+    }
+    @media screen and (max-width: $breakpoint-md) {
+      width: 180px;
+      height: 45px;
+      padding: 12.5px 64px;
+    }
+    &:hover {
+      background: $orange_bistre;
+      transition: 0.2s;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@use "../../variables" as *;
+.button {
+  font-family: $fontfamily-gothic;
+  text-align: center;
+  font-size: $fontsize-s;
+  line-height: 20px;
+  background-color: $black;
+  color: $white;
+  padding: 17.5px 74px;
+  transition: 0.2s;
+  @media screen and (max-width: $breakpoint-lg) {
+    padding: 17.5px 49px;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 12.5px 64px;
+  }
+  &:hover {
+    background: $orange_bistre;
+    color: $white;
+    text-decoration: none;
+  }
+}

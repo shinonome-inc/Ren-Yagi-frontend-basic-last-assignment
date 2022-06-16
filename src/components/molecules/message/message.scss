@@ -1,0 +1,28 @@
+@use "../../variables" as *;
+.message {
+  text-align: center;
+  .title {
+    font-family: $fontfamily-mincho;
+    @media screen and (min-width: $breakpoint-lg) {
+      margin: 52px 20px 10px 20px;
+      font-size: $fontsize-xl;
+    }
+    @media screen and (max-width: $breakpoint-lg) {
+      margin: 32px 20px 6px 20px;
+      font-size: $fontsize-l;
+    }
+  }
+  .explanation {
+    font-family: $fontfamily-gothic;
+    @media screen and (min-width: $breakpoint-lg) {
+      font-size: $fontsize-s;
+      line-height: 36px;
+      margin-bottom: 52px;
+    }
+    @media screen and (max-width: $breakpoint-lg) {
+      font-size: $fontsize-s;
+      line-height: 28px;
+      margin-bottom: 32px;
+    }
+  }
+}

@@ -4,11 +4,11 @@
   .title {
     font-family: $fontfamily-mincho;
     @media screen and (min-width: $breakpoint-lg) {
-      margin: 52px 20px 10px 20px;
+      margin: 52px 20px 10px;
       font-size: $fontsize-xl;
     }
     @media screen and (max-width: $breakpoint-lg) {
-      margin: 32px 20px 6px 20px;
+      margin: 32px 20px 6px;
       font-size: $fontsize-l;
     }
   }

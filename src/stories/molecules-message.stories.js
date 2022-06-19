@@ -1,6 +1,6 @@
-import Item_Message2 from "../components/molecules/message2/message2.html";
-import "../components/molecules/message2/message2.scss";
+import Item_Message from "../components/molecules/message/message.html";
+import "../components/molecules/message/message.scss";
 
-export default { title: "Molecules/Message2" };
+export default { title: "Molecules/Message" };
 
-export const Message = () => Item_Message2;
+export const Message = () => Item_Message;

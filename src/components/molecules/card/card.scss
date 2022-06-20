@@ -4,23 +4,18 @@
   left: 4px;
   z-index: 1;
   font-size: $fontsize-l;
-  font-family: $fontfamily-gothic;
   color: $orange_bistre;
 }
 .card {
   position: absolute;
   top: 10px;
   width: 540px;
-  height: auto;
   text-align: center;
-  font-family: $fontfamily-gothic;
   @media screen and (max-width: $breakpoint-lg) {
     width: 268px;
-    height: auto;
   }
   @media screen and (max-width: $breakpoint-md) {
-    width: 224px;
-    height: auto;
+    width: 226px;
   }
   .card-img {
     background-image: url(../../../img/card-1.jpg);
@@ -45,12 +40,12 @@
   }
   .card-text {
     font-size: $fontsize-s;
-    margin: 32px 241px 47.5px 241px;
+    margin: 32px 241px 47.5px;
     @media screen and (max-width: $breakpoint-lg) {
-      margin: 32px 83px 30px 83px;
+      margin: 32px 83px 30px;
     }
     @media screen and (max-width: $breakpoint-md) {
-      margin: 32px 83px 30px 83px;
+      margin: 32px 83px 30px;
     }
   }
   a {

@@ -58,9 +58,9 @@
   }
   .list6 {
     padding: 20px;
-    width: 221px;
+    width: 540px;
     @media (max-width: $breakpoint-lg) {
-      padding: 20px 19px;
+      width: 221px;
     }
   }
 }

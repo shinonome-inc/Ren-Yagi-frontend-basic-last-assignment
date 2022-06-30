@@ -1,32 +1,25 @@
 @use "../../variables" as *;
 .list-group {
   display: block;
-  max-width: 70%;
   text-align: center;
-  align-items: center;
   font-size: $fontsize-s;
   .plan-name {
     color: $white;
     background-color: $orange_zorba;
     font-size: $fontsize-l;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    height: 69px;
   }
   .plan-price {
     background-color: $gray_desertStorm;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    height: 142px;
     .price {
-      display: grid;
-      grid-template-columns: 5fr 7fr;
-      grid-template-rows: 72px;
       color: $orange_bistre;
     }
     .¥ {
       font-size: $fontsize-l;
       text-align: right;
       position: relative;
-      top: 29px;
+      top: 7px;
     }
     .cost {
       font-size: $fontsize-xxl;
@@ -36,9 +29,8 @@
   .plan-span {
     color: $black;
   }
-}
-.plan-information {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: $black;
+  .plan-information {
+    height: 60px;
+    color: $black;
+  }
 }

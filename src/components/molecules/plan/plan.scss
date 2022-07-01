@@ -1,5 +1,5 @@
 @use "../../variables" as *;
-.list-group {
+.list-group:nth-child(odd) {
   display: block;
   text-align: center;
   font-size: $fontsize-s;
@@ -7,11 +7,13 @@
     color: $white;
     background-color: $orange_zorba;
     font-size: $fontsize-l;
-    height: 69px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .plan-price {
     background-color: $gray_desertStorm;
-    height: 142px;
+    padding-top: 24px;
+    padding-bottom: 23px;
     .price {
       color: $orange_bistre;
     }
@@ -25,12 +27,53 @@
       font-size: $fontsize-xxl;
       text-align: left;
     }
+    .plan-span {
+      color: $black;
+    }
+    .plan-information {
+      color: $black;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
-  .plan-span {
-    color: $black;
+}
+.list-group:nth-child(even) {
+  display: block;
+  text-align: center;
+  font-size: $fontsize-s;
+  border: 5px solid $orange_bistre;
+  margin-top: 10px;
+  .plan-name {
+    color: $white;
+    background-color: $orange_bistre;
+    font-size: $fontsize-l;
+    padding-top: 15.5px;
+    padding-bottom: 15.5px;
   }
-  .plan-information {
-    height: 60px;
-    color: $black;
+  .plan-price {
+    background-color: $gray_desertStorm;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    .price {
+      color: $orange_bistre;
+    }
+    .¥ {
+      font-size: $fontsize-l;
+      text-align: right;
+      position: relative;
+      top: 7px;
+    }
+    .cost {
+      font-size: $fontsize-xxl;
+      text-align: left;
+    }
+    .plan-span {
+      color: $black;
+    }
+    .plan-information {
+      color: $black;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
 }

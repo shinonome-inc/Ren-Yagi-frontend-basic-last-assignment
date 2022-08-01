@@ -1,78 +1,45 @@
 @use "../../variables" as *;
-.card-consept {
-  position: relative;
-  left: 4px;
-  z-index: 1;
-  font-size: $fontsize-l;
-  color: $orange_bistre;
-}
-.card {
-  position: absolute;
-  top: 10px;
-  width: 540px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media screen and (max-width: $breakpoint-lg) {
-    width: 268px;
+.card-content {
+  .card-consept {
+    position: relative;
+    left: 6px;
+    z-index: 1;
+    font-size: $fontsize-l;
+    color: $orange_bistre;
   }
-  @media screen and (max-width: $breakpoint-md) {
-    width: 226px;
-  }
-  .card-img {
-    background-image: url(../../../img/card-1.jpg);
-    background-size: 540px 382.41px;
-    width: 540px;
-    height: 382.41px;
-    @media screen and (max-width: $breakpoint-lg) {
-      background-size: 268px 203.74px;
-      width: 268px;
-      height: 203.74px;
-    }
-    @media screen and (max-width: $breakpoint-md) {
-      background-size: 224px 175.27px;
-      width: 224px;
-      height: 175.27px;
-    }
-    .card-triangle {
-      width: 0;
-      border-top: solid 150px $white;
-      border-right: solid 150px transparent;
-    }
-  }
-  .card-text {
-    font-size: $fontsize-s;
-    margin: 32px 241px 47.5px;
-    @media screen and (max-width: $breakpoint-lg) {
-      margin: 32px 83px 30px;
-    }
-    @media screen and (max-width: $breakpoint-md) {
-      margin: 32px 83px 30px;
-    }
-  }
-  .button {
+  .card {
+    position: absolute;
+    top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: $fontsize-s;
-    background-color: $black;
-    color: $white;
-    width: 200px;
-    height: 55px;
-    transition: 0.2s;
-    margin-bottom: 32px;
-    @media screen and (max-width: $breakpoint-lg) {
-      width: 150px;
-      height: 55px;
+    border-radius: 0px;
+    .card-img {
+      background-image: url(../../../img/card-1.jpg);
+      background-size: cover;
+      height: 382.41px;
+      @media screen and (max-width: $breakpoint-lg) {
+        height: 203.74px;
+      }
+      @media screen and (max-width: $breakpoint-md) {
+        height: 175.27px;
+      }
+      @media screen and (min-width: $breakpoint-md) {
+        &:hover {
+          transform: scale(1.2, 1.2);
+          transition: 0.5s;
+        }
+      }
+      .card-triangle {
+        width: 0;
+        border-top: solid 150px $white;
+        border-right: solid 150px transparent;
+      }
     }
-    @media screen and (max-width: $breakpoint-md) {
-      width: 180px;
-      height: 45px;
-    }
-    &:hover {
-      background: $orange_bistre;
-      color: $white;
-      text-decoration: none;
+    .card-text {
+      font-size: $fontsize-s;
+      margin-top: 32px;
+      margin-bottom: 30px;
     }
   }
 }

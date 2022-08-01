@@ -1,9 +1,9 @@
 @use "../../variables" as *;
 .message {
   text-align: center;
-  padding: 52px;
+  padding: 44px;
   @media screen and (max-width: $breakpoint-lg) {
-    padding: 32px;
+    padding: 20px;
   }
   .title {
     font-family: $fontfamily-mincho;

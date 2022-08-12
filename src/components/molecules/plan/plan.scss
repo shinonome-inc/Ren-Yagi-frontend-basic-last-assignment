@@ -25,15 +25,10 @@
     .price {
       color: $orange_bistre;
       font-weight: 700;
-      .cost-mark {
+      font-size: $fontsize-xxl;
+      &::first-letter {
         font-size: $fontsize-l;
-        text-align: right;
-        position: relative;
-        top: 8.5px;
-      }
-      .cost {
-        font-size: $fontsize-xxl;
-        text-align: left;
+        padding-right: 4px;
       }
     }
     .plan-span {

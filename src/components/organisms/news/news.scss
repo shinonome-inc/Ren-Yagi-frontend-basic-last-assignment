@@ -7,9 +7,9 @@
       font-size: $fontsize-xxl;
     }
   }
-  .list-group {
+  .news-content {
     margin-bottom: 30px;
-    border-radius: 0px;
+    border-radius: 0;
     .news-link {
       &:hover {
         text-decoration: none;
@@ -18,11 +18,13 @@
         color: $black;
         background-color: $white;
         font-size: $fontsize-m;
+        padding: 20px;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        padding-top: 20px 20px 20px 0%;
         transition: 0.2s;
+        border-width: 0;
+        outline: 1px solid $gray_gainsboro;
         &:hover {
           color: $orange_bistre;
         }

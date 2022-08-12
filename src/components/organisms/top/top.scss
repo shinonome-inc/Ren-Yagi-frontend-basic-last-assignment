@@ -1,0 +1,34 @@
+@use "../../variables" as *;
+@use "../../molecules/message/message.scss" as *;
+.top {
+  .top-title {
+    position: relative;
+    .top-img {
+      width: 100%;
+      @media screen and (max-width: $breakpoint-lg) {
+        height: 360px;
+      }
+    }
+    .title-name {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      writing-mode: vertical-rl;
+      font-size: $fontsize-xl;
+      color: $white;
+      font-family: $fontfamily-mincho;
+      @media screen and (max-width: $breakpoint-lg) {
+        font-size: $fontsize-l;
+      }
+    }
+  }
+  .message {
+    color: $white;
+    background-color: $black;
+    padding: 52px auto 74px;
+    @media screen and (max-width: $breakpoint-lg) {
+      padding: 32px auto;
+    }
+  }
+}

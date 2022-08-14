@@ -1,0 +1,26 @@
+@use "../../variables" as *;
+.header {
+  height: 60px;
+  background-color: $black;
+  .header-img {
+    width: 120px;
+    height: 20.56px;
+    position: relative;
+    left: 16px;
+    margin-top: 19.72px;
+  }
+  .hambergar {
+    text-align: right;
+    .hambergar-icon {
+      border: none;
+      position: relative;
+      right: 16px;
+      bottom: 22px;
+      .hambergar-icon-material1 {
+        background-size: 15px 3px;
+        margin-bottom: 3px;
+        background-color: $white;
+      }
+    }
+  }
+}

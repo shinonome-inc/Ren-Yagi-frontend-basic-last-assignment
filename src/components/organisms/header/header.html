@@ -1,40 +1,58 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+<div class="header">
+  <img class="header-img" src="../../../img/header.png" />
+  <p class="hambergar">
     <button
-      class="navbar-toggler"
+      class="hambergar-icon"
+      class="btn btn-primary"
       type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNavDarkDropdown"
-      aria-controls="navbarNavDarkDropdown"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
+      data-toggle="collapse"
+      data-target="#collapseExample1"
+      aria-expaｓnded="false"
+      aria-controls="collapseExample"
     >
-      <span class="navbar-toggler-icon"></span>
+      <div class="hambergar-icon-material1">　</div>
+      <div class="hambergar-icon-material2">　</div>
+      <div class="hambergar-icon-material3">　</div>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDarkDropdownMenuLink"
-            role="button"
-            data-bs-toggle="dropdown"
+  </p>
+  <div class="collapse" id="collapseExample1">
+    <ul class="list-group">
+      <li class="list-group-item">HOME</li>
+      <li class="list-group-item">CONSEPT</li>
+      <li class="list-group-item">
+        SERVICE
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseExample2"
             aria-expanded="false"
+            aria-controls="collapseExample2"
           >
-            Dropdown
-          </a>
-          <ul
-            class="dropdown-menu dropdown-menu-dark"
-            aria-labelledby="navbarDarkDropdownMenuLink"
-          >
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <span></span>
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample2">
+          <ul class="list-group">
+            <li class="list-group-item">ブログアーカイブ</li>
+            <li class="list-group-item">お知らせアーカイブ</li>
+            <li class="list-group-item">イベントアーカイブ</li>
+            <li class="list-group-item">インタビューアーカイブ</li>
+            <li class="list-group-item">FAQページ</li>
+            <li class="list-group-item">固定ページ(デフォルト)</li>
+            <li class="list-group-item">CONSEPT</li>
+            <li class="list-group-item">SERVICE</li>
+            <li class="list-group-item">FLOOR</li>
+            <li class="list-group-item">ACCESS</li>
           </ul>
-        </li>
-      </ul>
-    </div>
+        </div>
+      </li>
+      <li class="list-group-item">FLOOR</li>
+      <li class="list-group-item">INTERVIEW</li>
+      <li class="list-group-item">BLOG</li>
+      <li class="list-group-item">ACCESS</li>
+      <li class="list-group-item">DOWNLOAD</li>
+    </ul>
   </div>
-</nav>
+</div>

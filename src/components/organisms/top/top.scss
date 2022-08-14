@@ -4,6 +4,7 @@
   .top-title {
     position: relative;
     .top-img {
+      height: 100vh;
       width: 100%;
       @media screen and (max-width: $breakpoint-lg) {
         height: 360px;

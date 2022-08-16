@@ -1,0 +1,26 @@
+@use "../../variables" as *;
+@use "../../molecules/message/message.scss" as *;
+.about {
+  .about-img {
+    display: flex;
+    @media screen and (max-width: $breakpoint-md) {
+      flex-wrap: wrap;
+    }
+    .about-picture {
+      width: 25%;
+      @media screen and (max-width: $breakpoint-md) {
+        width: 50%;
+      }
+    }
+  }
+  .message {
+    padding: 52px 26.5px;
+    background-color: $white_smoke;
+    @media screen and (max-width: $breakpoint-md) {
+      padding: 32px 24px;
+    }
+    .title {
+      color: $orange_bistre;
+    }
+  }
+}

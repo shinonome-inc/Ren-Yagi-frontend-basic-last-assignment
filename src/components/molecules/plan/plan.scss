@@ -8,19 +8,21 @@
     color: $white;
     background-color: $orange_zorba;
     font-size: $fontsize-l;
-    padding: 20px 0 20px;
+    padding: 20px 0;
     font-weight: 700;
   }
   &:nth-child(even) {
     border: 5px solid $orange_bistre;
-    margin: 24px 0;
     .plan-name {
       background-color: $orange_bistre;
-      padding: 15.5px 0 15.5px;
+      padding: 17.5px 0;
+    }
+    .plan-information2 {
+      padding: 17.5px 19px;
     }
   }
   .plan-price {
-    padding: 24px 0 24px;
+    padding: 24px 0;
     background-color: $gray_desertStorm;
     .price {
       color: $orange_bistre;
@@ -36,8 +38,11 @@
       color: $black;
     }
   }
-  .plan-information {
+  .plan-information1 {
     color: $black;
-    padding: 20px 19px 20px;
+    padding: 20px 19px;
+  }
+  .plan-information2 {
+    padding: 20px 19px;
   }
 }

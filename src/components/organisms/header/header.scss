@@ -2,6 +2,9 @@
 .header {
   height: 60px;
   background-color: $black;
+  @media screen and (min-width: $breakpoint-xl) {
+    display: none;
+  }
   .header-img {
     width: 120px;
     height: 20.56px;
@@ -20,6 +23,34 @@
       height: 3px;
       margin: 0px 16px 3px auto;
       color: $white;
+    }
+  }
+  .collapse {
+    .menu {
+      position: relative;
+      bottom: 14px;
+      .menu-item1 {
+        height: 56px;
+        padding-top: 18px;
+        color: $white;
+        background-color: $black;
+        font-size: $fontsize-s;
+        border-radius: 0;
+      }
+      .menu-item2 {
+        padding-top: 18px;
+        color: $white;
+        background-color: $black;
+        font-size: $fontsize-s;
+        border-radius: 0;
+        .service-icon1 {
+          border: solid 0.5px $white;
+          transform: rotate(-90deg);
+        }
+        .service-icon2 {
+          border: solid 0.5px $white;
+        }
+      }
     }
   }
 }

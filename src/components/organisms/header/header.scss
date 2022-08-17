@@ -9,18 +9,17 @@
     left: 16px;
     margin-top: 19.72px;
   }
-  .hambergar {
-    text-align: right;
-    .hambergar-icon {
-      border: none;
+  .hamburgar {
+    display: flex;
+    flex-direction: column;
+    .hamburgar-icon {
       position: relative;
-      right: 16px;
-      bottom: 22px;
-      .hambergar-icon-material1 {
-        background-size: 15px 3px;
-        margin-bottom: 3px;
-        background-color: $white;
-      }
+      bottom: 18px;
+      border: none;
+      width: 15px;
+      height: 3px;
+      margin: 0px 16px 3px auto;
+      color: $white;
     }
   }
 }

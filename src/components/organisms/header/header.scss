@@ -1,55 +1,154 @@
 @use "../../variables" as *;
 .header {
-  height: 60px;
-  background-color: $black;
-  @media screen and (min-width: $breakpoint-xl) {
-    display: none;
-  }
-  .header-img {
-    width: 120px;
-    height: 20.56px;
-    position: relative;
-    left: 16px;
-    margin-top: 19.72px;
-  }
-  .hamburgar {
-    display: flex;
-    flex-direction: column;
-    .hamburgar-icon {
+  .header-lg {
+    height: 60px;
+    background-color: $black;
+    @media screen and (min-width: $breakpoint-xl) {
+      display: none;
+    }
+    .header-img-lg {
+      width: 120px;
+      height: 20.56px;
       position: relative;
-      bottom: 18px;
-      border: none;
-      width: 15px;
-      height: 3px;
-      margin: 0px 16px 3px auto;
-      color: $white;
+      left: 16px;
+      margin-top: 19.72px;
+    }
+    .hamburgar {
+      display: flex;
+      flex-direction: column;
+      .hamburgar-icon {
+        position: relative;
+        bottom: 18px;
+        border: none;
+        width: 15px;
+        height: 3px;
+        margin: 0px 16px 3px auto;
+        color: $white;
+        outline: none;
+      }
+    }
+    .collapse1 {
+      .menu {
+        position: relative;
+        bottom: 14px;
+        .menu-item1 {
+          padding-bottom: 15px;
+          color: $white;
+          background-color: $black;
+          font-size: $fontsize-s;
+          border-radius: 0;
+        }
+        .menu-item2 {
+          padding-bottom: 15px;
+          color: $white;
+          background-color: $black;
+          font-size: $fontsize-s;
+          border-radius: 0;
+          .consept {
+            text-align: right;
+            position: relative;
+            bottom: 25px;
+            .consept-icon {
+              width: 26px;
+              height: 26px;
+              background-color: $black;
+              border-radius: 50%;
+              border-color: $white;
+              .consept-icon-material {
+                display: block;
+                content: "";
+                position: relative;
+                top: 1px;
+                width: 10px;
+                height: 2px;
+                background: $white;
+              }
+              &::after {
+                display: block;
+                content: "";
+                position: relative;
+                bottom: 1px;
+                width: 10px;
+                height: 2px;
+                background: $white;
+                transform: rotate(90deg);
+              }
+            }
+          }
+          .collapse2 {
+            .consept-menu {
+              position: relative;
+              bottom: 28px;
+              .consept-menu-item {
+                padding-bottom: 15px;
+                color: $white;
+                background-color: $black;
+                font-size: $fontsize-s;
+                border-radius: 0;
+              }
+            }
+          }
+        }
+        .menu-item3 {
+          position: relative;
+          bottom: 44px;
+          padding-bottom: 15px;
+          color: $white;
+          background-color: $black;
+          font-size: $fontsize-s;
+          border-radius: 0;
+        }
+      }
     }
   }
-  .collapse {
-    .menu {
+  .header-xl {
+    height: 90px;
+    background-color: $black_50;
+    @media screen and (max-width: $breakpoint-xl) {
+      display: none;
+    }
+    .header-img-xl {
+      width: 140px;
+      height: 23.99px;
       position: relative;
-      bottom: 14px;
-      .menu-item1 {
-        height: 56px;
-        padding-top: 18px;
-        color: $white;
-        background-color: $black;
-        font-size: $fontsize-s;
-        border-radius: 0;
+      left: 30px;
+      margin-top: 33.01px;
+    }
+    .menu-xl {
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      bottom: 25px;
+      color: $white;
+      .menu-list-xl1 {
+        margin-right: 40px;
       }
-      .menu-item2 {
-        padding-top: 18px;
-        color: $white;
-        background-color: $black;
-        font-size: $fontsize-s;
-        border-radius: 0;
-        .service-icon1 {
-          border: solid 0.5px $white;
-          transform: rotate(-90deg);
+      .menu-list-xl2 {
+        margin-right: 40px;
+        .plan-xl {
+          display: none;
         }
-        .service-icon2 {
-          border: solid 0.5px $white;
+        &:hover {
+          color: $gray_nobel;
+          .plan-xl {
+            display: block;
+            position: fixed;
+            .plan-item-xl {
+              position: relative;
+              top: 34px;
+              right: 20px;
+              width: 220px;
+              height: 56px;
+              color: $white;
+              background-color: $black;
+              border-radius: 0;
+              padding: 18px;
+            }
+          }
         }
+      }
+      .menu-list-xl3 {
+        margin-right: 50px;
       }
     }
   }

@@ -1,0 +1,43 @@
+@use "../../variables" as *;
+@use "../../molecules/message/message.scss" as *;
+@use "../../molecules/plan/plan.scss" as *;
+@use "../../atoms/button/button.scss" as *;
+.orga-plan {
+  .message {
+    padding-top: 0;
+    .title {
+      color: $orange_bistre;
+      font-size: $fontsize-l;
+      margin-bottom: 6px;
+    }
+    .explanation {
+      line-height: 2;
+    }
+  }
+  .plan-list {
+    display: flex;
+    @media screen and (max-width: $breakpoint-md) {
+      display: block;
+    }
+    .plan {
+      width: 33%;
+      margin: 0 24px;
+      &:nth-child(even) {
+        margin: 0 6px;
+      }
+      @media screen and (max-width: $breakpoint-md) {
+        width: 100%;
+        margin: 0 0 24px;
+        &:nth-child(even) {
+          margin: 0 0 24px;
+        }
+      }
+    }
+  }
+  .orga-button {
+    margin: 40px 0 100px;
+    @media screen and (max-width: $breakpoint-md) {
+      margin: 0 0 15px;
+    }
+  }
+}

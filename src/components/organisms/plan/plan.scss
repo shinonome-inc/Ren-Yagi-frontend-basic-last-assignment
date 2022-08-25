@@ -35,7 +35,8 @@
     }
   }
   .orga-button {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin: 40px 0 100px;
     @media screen and (max-width: $breakpoint-md) {
       margin: 0 0 15px;

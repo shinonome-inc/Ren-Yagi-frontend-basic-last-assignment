@@ -1,8 +1,5 @@
 @use "../../variables" as *;
-@use "../../molecules/message/message.scss" as *;
-@use "../../molecules/plan/plan.scss" as *;
-@use "../../atoms/button/button.scss" as *;
-.orga-plan {
+.organisms-plan {
   .message {
     padding-top: 0;
     .title {
@@ -28,13 +25,10 @@
       @media screen and (max-width: $breakpoint-md) {
         width: 100%;
         margin: 0 0 24px;
-        &:nth-child(even) {
-          margin: 0 0 24px;
-        }
       }
     }
   }
-  .orga-button {
+  .button-wrapper {
     display: flex;
     justify-content: center;
     margin: 40px 0 100px;

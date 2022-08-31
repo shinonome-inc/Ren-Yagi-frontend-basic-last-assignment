@@ -1,5 +1,4 @@
 @use "../../variables" as *;
-@use "../../atoms/button/button.scss" as *;
 .card {
   align-items: center;
   border: none;
@@ -50,6 +49,7 @@
     line-height: 2.4;
   }
   .button {
-    padding: 17.5px;
+    padding: 17.5px 49px;
+    margin-bottom: 32px;
   }
 }

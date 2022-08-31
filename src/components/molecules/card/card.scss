@@ -7,10 +7,11 @@
   background-color: $white_smoke;
   .card-img {
     border-radius: 0;
+    position: relative;
     .card-title {
-      position: relative;
+      position: absolute;
+      top: 0px;
       left: 6px;
-      bottom: 532px;
       font-size: $fontsize-l;
       font-weight: 700;
       color: $orange_bistre;
@@ -19,8 +20,8 @@
       width: 0;
       border-top: solid 150px $white;
       border-right: solid 150px transparent;
-      position: relative;
-      bottom: 382.2px;
+      position: absolute;
+      top: 0px;
     }
     .card-overflow {
       overflow: hidden;
@@ -47,12 +48,8 @@
     margin-top: 32px;
     margin-bottom: 30px;
     line-height: 2.4;
-    position: relative;
-    bottom: 186px;
   }
   .button {
-    position: relative;
-    bottom: 186px;
     padding: 17.5px;
   }
 }

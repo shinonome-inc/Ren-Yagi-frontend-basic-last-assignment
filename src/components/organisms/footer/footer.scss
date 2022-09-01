@@ -24,40 +24,70 @@
           width: 7.5px;
           height: 14px;
           margin-right: 17.08px;
+          transition: 0.2s;
+          &:hover {
+            color: $gray_nobel;
+          }
         }
         .footer-twitter {
           width: 14px;
           height: 11.37px;
           margin-right: 14.7px;
+          transition: 0.2s;
+          &:hover {
+            color: $gray_nobel;
+          }
         }
         .footer-instagram {
           width: 12.26px;
           height: 12.25px;
           margin-right: 15.75px;
+          transition: 0.2s;
+          &:hover {
+            color: $gray_nobel;
+          }
         }
         .footer-wifi {
           width: 12.25px;
           height: 12.25px;
+          transition: 0.2s;
+          &:hover {
+            color: $gray_nobel;
+          }
         }
       }
     }
   }
   .footer-menu {
     background-color: $white_smoke;
+    border: solid $gray_nobel;
+    border-width: 1px 0;
     .footer-menu-item1 {
       font-size: $fontsize-s;
       color: $black;
       text-decoration: none;
+      transition: 0.2s;
+      &:hover {
+        color: $orange_bistre;
+      }
     }
     .footer-menu-item2 {
       font-size: $fontsize-s;
       color: $black;
       text-decoration: none;
+      transition: 0.2s;
+      &:hover {
+        color: $orange_bistre;
+      }
     }
     .footer-menu-item3 {
       font-size: $fontsize-s;
       color: $black;
       text-decoration: none;
+      transition: 0.2s;
+      &:hover {
+        color: $orange_bistre;
+      }
     }
     @media screen and (max-width: $breakpoint-lg) {
       display: flex;

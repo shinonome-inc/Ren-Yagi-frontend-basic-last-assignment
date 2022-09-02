@@ -58,11 +58,60 @@
       }
     }
   }
-  .footer-menu {
+  .footer-menu1 {
+    display: none;
+    @media screen and (max-width: $breakpoint-lg) {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 16px;
+      background-color: $white_smoke;
+      border: solid $gray_nobel;
+      border-width: 1px 0;
+      .footer-menu1-item1 {
+        width: 50%;
+        text-align: left;
+        margin-bottom: 8px;
+        font-size: $fontsize-s;
+        color: $black;
+        text-decoration: none;
+        transition: 0.2s;
+        &:hover {
+          color: $orange_bistre;
+        }
+      }
+      .footer-menu1-item2 {
+        width: 50%;
+        text-align: left;
+        font-size: $fontsize-s;
+        color: $black;
+        text-decoration: none;
+        transition: 0.2s;
+        &:hover {
+          color: $orange_bistre;
+        }
+      }
+      .footer-menu1-item3 {
+        width: 50%;
+        text-align: left;
+        font-size: $fontsize-s;
+        color: $black;
+        text-decoration: none;
+        transition: 0.2s;
+        &:hover {
+          color: $orange_bistre;
+        }
+      }
+    }
+  }
+  .footer-menu2 {
+    padding: 16px 0 16px;
     background-color: $white_smoke;
     border: solid $gray_nobel;
     border-width: 1px 0;
-    .footer-menu-item1 {
+    .footer-menu2-item1 {
+      border-right: 1px solid $black;
+      padding-right: 8px;
+      margin-right: 8px;
       font-size: $fontsize-s;
       color: $black;
       text-decoration: none;
@@ -71,16 +120,7 @@
         color: $orange_bistre;
       }
     }
-    .footer-menu-item2 {
-      font-size: $fontsize-s;
-      color: $black;
-      text-decoration: none;
-      transition: 0.2s;
-      &:hover {
-        color: $orange_bistre;
-      }
-    }
-    .footer-menu-item3 {
+    .footer-menu2-item2 {
       font-size: $fontsize-s;
       color: $black;
       text-decoration: none;
@@ -90,35 +130,7 @@
       }
     }
     @media screen and (max-width: $breakpoint-lg) {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 16px;
-      .footer-menu-item1 {
-        width: 50%;
-        text-align: left;
-        margin-bottom: 8px;
-      }
-      .footer-menu-item2 {
-        width: 50%;
-        text-align: left;
-      }
-      .footer-menu-item3 {
-        width: 50%;
-        text-align: left;
-      }
-    }
-    @media screen and (min-width: $breakpoint-lg) {
-      padding: 16px 0 16px;
-      .footer-menu-item1 {
-        border-right: 1px solid $black;
-        padding-right: 8px;
-        margin-right: 8px;
-      }
-      .footer-menu-item2 {
-        border-right: 1px solid $black;
-        padding-right: 8px;
-        margin-right: 8px;
-      }
+      display: none;
     }
   }
   .footer-end {

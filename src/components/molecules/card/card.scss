@@ -25,14 +25,9 @@
     .card-overflow {
       overflow: hidden;
       width: 100%;
-      height: 175.27px;
-      @media screen and (max-width: $breakpoint-md) {
-        height: 382.41px;
-      }
       .card-picture {
         object-fit: cover;
         width: 100%;
-        height: 100%;
         @media screen and (min-width: $breakpoint-md) {
           transition: 0.5s;
           &:hover {

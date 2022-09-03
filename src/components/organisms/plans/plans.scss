@@ -1,0 +1,36 @@
+@use "../../variables" as *;
+@use "../../molecules/message/message.scss" as *;
+.organisms-plan {
+  .message {
+    padding: 0 0 32px;
+    .title {
+      color: $orange_bistre;
+      margin-bottom: 6px;
+    }
+  }
+  .plan-list {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    @media screen and (max-width: $breakpoint-md) {
+      display: block;
+    }
+    .plan {
+      display: inline-block;
+      flex: 1;
+      width: auto;
+      @media screen and (max-width: $breakpoint-md) {
+        width: 100%;
+        margin: 0 0 24px;
+      }
+    }
+  }
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 100px;
+    @media screen and (max-width: $breakpoint-md) {
+      margin: 0 0 15px;
+    }
+  }
+}

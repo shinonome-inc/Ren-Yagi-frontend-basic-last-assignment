@@ -1,4 +1,5 @@
 @use "../../variables" as *;
+@use "../../molecules/message/message.scss" as *;
 .organisms-plan {
   .message {
     padding: 0 0 32px;

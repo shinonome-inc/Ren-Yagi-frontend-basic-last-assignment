@@ -1,38 +1,37 @@
 @use "../../variables" as *;
 .header {
+  position: relative;
   .header-lg {
-    height: 60px;
+    height: 65px;
     background-color: $black;
     @media screen and (min-width: $breakpoint-xl) {
       display: none;
     }
     .header-img {
-      width: 120px;
-      height: 20.56px;
       position: relative;
       left: 16px;
+      width: 120px;
+      height: 20.56px;
       margin-top: 19.72px;
     }
-    .hamburgar {
+    .hamburgar-icon {
+      position: absolute;
+      top: 20px;
+      right: 0;
+      border: none;
+      background-color: $black;
+      margin: 0px 16px 3px auto;
+      outline: none;
       display: flex;
       flex-direction: column;
-      .hamburgar-icon {
-        position: relative;
-        bottom: 18px;
-        border: none;
-        width: 15px;
-        height: 3px;
-        margin: 0px 16px 3px auto;
-        color: $white;
-        outline: none;
-      }
     }
     .collapse1 {
       .menu {
-        position: relative;
-        bottom: 14px;
+        position: absolute;
+        top: 65px;
+        width: 100%;
         .menu-item1 {
-          padding-bottom: 15px;
+          padding: 15px 16px;
           background-color: $black;
           font-size: $fontsize-s;
           border-radius: 0;
@@ -42,51 +41,27 @@
           }
         }
         .menu-item2 {
-          padding-bottom: 15px;
+          padding: 15px 16px;
           background-color: $black;
           font-size: $fontsize-s;
-          border-radius: 0;
+          position: relative;
           .menu-item2-link {
             color: $white;
             text-decoration: none;
           }
-          .consept {
-            text-align: right;
-            position: relative;
-            bottom: 25px;
-            .consept-icon {
-              width: 26px;
-              height: 26px;
-              background-color: $black;
-              border-radius: 50%;
-              border-color: $white;
-              .consept-icon-material {
-                display: block;
-                content: "";
-                position: relative;
-                top: 1px;
-                width: 10px;
-                height: 2px;
-                background: $white;
-              }
-              &::after {
-                display: block;
-                content: "";
-                position: relative;
-                bottom: 1px;
-                width: 10px;
-                height: 2px;
-                background: $white;
-                transform: rotate(90deg);
-              }
-            }
+          .consept-icon {
+            position: absolute;
+            top: 12px;
+            right: 16px;
+            background-color: $black;
+            outline: none;
           }
           .collapse2 {
             .consept-menu {
               position: relative;
-              bottom: 28px;
+              top: 12px;
               .consept-menu-item {
-                padding-bottom: 15px;
+                padding: 15px 12px;
                 background-color: $black;
                 font-size: $fontsize-s;
                 border-radius: 0;
@@ -99,9 +74,7 @@
           }
         }
         .menu-item3 {
-          position: relative;
-          bottom: 44px;
-          padding-bottom: 15px;
+          padding: 15px 16px;
           background-color: $black;
           font-size: $fontsize-s;
           border-radius: 0;

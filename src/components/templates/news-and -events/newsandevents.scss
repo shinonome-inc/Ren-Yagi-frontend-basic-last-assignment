@@ -1,0 +1,46 @@
+@use "../../variables" as *;
+@use "../../../components/organisms/news/news.scss" as *;
+.newsandevents {
+  display: flex;
+  gap: 40px;
+  .news {
+    width: 50%;
+    &:nth-child(even) {
+      .news-content {
+        .news-link {
+          display: flex;
+          .event-img {
+            height: 147px;
+          }
+          .news-information {
+            width: 100%;
+            padding: 49.5px 24px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: $breakpoint-lg) {
+    display: block;
+    .news {
+      width: 100%;
+      &:nth-child(even) {
+        margin-top: 38px;
+        .news-content {
+          .news-link {
+            .event-img {
+              display: none;
+            }
+            .news-information {
+              padding: 10px 20px 8px;
+              .news-data {
+                color: $gray_gainsboro;
+                padding-top: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

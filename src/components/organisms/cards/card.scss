@@ -4,8 +4,10 @@
   .cards-box {
     .card-col {
       .card {
-        gap: 30px;
+        height: 100%;
+        gap: 24px;
         @media screen and (max-width: $breakpoint-md) {
+          height: auto;
           margin-bottom: 40px;
         }
         .card-text {

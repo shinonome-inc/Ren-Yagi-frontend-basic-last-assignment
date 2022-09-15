@@ -1,44 +1,31 @@
 @use "../../variables" as *;
-@use "../../../components/organisms/news/news.scss" as *;
+@use "../../organisms/news/news.scss" as *;
+@use "../../organisms/events/events.scss" as *;
 .newsandevents {
   display: flex;
   gap: 40px;
+  margin: 56px 16px 94px;
   .news {
-    width: 50%;
-    &:nth-child(even) {
-      .news-content {
-        .news-link {
-          display: flex;
-          .event-img {
-            height: 147px;
-          }
-          .news-information {
-            width: 100%;
-            padding: 49.5px 24px;
-          }
+    flex: 1;
+  }
+  .events {
+    flex: 1;
+    .event-list {
+      .event-card {
+        .event-content {
+          height: 147px;
         }
       }
     }
   }
-  @media screen and (max-width: $breakpoint-lg) {
+  @media screen and (max-width: $breakpoint-md) {
     display: block;
+    margin: 0;
     .news {
-      width: 100%;
-      &:nth-child(even) {
-        margin-top: 38px;
-        .news-content {
-          .news-link {
-            .event-img {
-              display: none;
-            }
-            .news-information {
-              padding: 10px 20px 8px;
-              .news-data {
-                color: $gray_gainsboro;
-                padding-top: 8px;
-              }
-            }
-          }
+      margin-bottom: 35px;
+      .news-and-events-title {
+        & > h2 {
+          font-size: $fontsize-l;
         }
       }
     }

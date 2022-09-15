@@ -3,6 +3,10 @@
 .cards {
   .cards-box {
     .card-col {
+      margin-bottom: 100px;
+      @media screen and (max-width: $breakpoint-md) {
+        margin-bottom: 0;
+      }
       .card {
         height: 100%;
         gap: 24px;

@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 @use "../../molecules/card/card.scss" as *;
 .cards {
+  margin-bottom: 0;
   .cards-box {
     .card-col {
       margin-bottom: 100px;

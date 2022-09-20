@@ -131,24 +131,23 @@
           .plan-xl {
             display: block;
             position: fixed;
-            .plan-item-xl {
-              position: relative;
-              top: 34px;
-              right: 20px;
-              width: 220px;
-              height: 56px;
-              background-color: $black;
-              border-radius: 0;
-              padding: 18px;
-              transition: 0.2s;
-              .plan-item-link-xl {
+            .plan-item-link-xl {
+              color: $white;
+              text-decoration: none;
+              .plan-item-xl {
                 display: flex;
-                justify-content: flex-start;
-                color: $white;
-                text-decoration: none;
-              }
-              &:hover {
-                background-color: $orange_bistre;
+                position: relative;
+                top: 34px;
+                right: 20px;
+                width: 220px;
+                height: 56px;
+                background-color: $black;
+                border-radius: 0;
+                padding: 18px;
+                transition: 0.2s;
+                &:hover {
+                  background-color: $orange_bistre;
+                }
               }
             }
           }

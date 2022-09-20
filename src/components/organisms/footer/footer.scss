@@ -1,0 +1,129 @@
+@use "../../variables" as *;
+.footer {
+  text-align: center;
+  .footer-content {
+    .footer-img {
+      width: 150px;
+      height: 25.7px;
+      margin: 52px auto 20px;
+      @media screen and (max-width: $breakpoint-lg) {
+        margin-top: 32px;
+      }
+    }
+    .footer-information {
+      font-size: $fontsize-s;
+      line-height: 2;
+      .footer-icon {
+        display: flex;
+        justify-content: center;
+        margin: 20px auto 52px;
+        @media screen and (max-width: $breakpoint-lg) {
+          margin-bottom: 32px;
+        }
+        .footer-facebook {
+          width: 7.5px;
+          height: 14px;
+          margin-right: 17.08px;
+          transition: 0.2s;
+          &:hover {
+            color: $gray_nobel;
+          }
+        }
+        .footer-twitter {
+          width: 14px;
+          height: 11.37px;
+          margin-right: 14.7px;
+          transition: 0.2s;
+          &:hover {
+            color: $gray_nobel;
+          }
+        }
+        .footer-instagram {
+          width: 12.26px;
+          height: 12.25px;
+          margin-right: 15.75px;
+          transition: 0.2s;
+          &:hover {
+            color: $gray_nobel;
+          }
+        }
+        .footer-wifi {
+          width: 12.25px;
+          height: 12.25px;
+          transition: 0.2s;
+          &:hover {
+            color: $gray_nobel;
+          }
+        }
+      }
+    }
+  }
+  .footer-menu {
+    background-color: $white_smoke;
+    border: solid $gray_nobel;
+    border-width: 1px 0;
+    padding: 16px;
+    .footer-menu-item1 {
+      font-size: $fontsize-s;
+      color: $black;
+      text-decoration: none;
+      border-right: 1px solid $black;
+      padding-right: 8px;
+      margin-right: 8px;
+      transition: 0.2s;
+      &:hover {
+        color: $orange_bistre;
+      }
+    }
+    .footer-menu-item2 {
+      font-size: $fontsize-s;
+      color: $black;
+      text-decoration: none;
+      border-right: 1px solid $black;
+      padding-right: 8px;
+      margin-right: 8px;
+      transition: 0.2s;
+      &:hover {
+        color: $orange_bistre;
+      }
+    }
+    .footer-menu-item3 {
+      font-size: $fontsize-s;
+      color: $black;
+      text-decoration: none;
+      transition: 0.2s;
+      &:hover {
+        color: $orange_bistre;
+      }
+    }
+    @media screen and (max-width: $breakpoint-lg) {
+      display: flex;
+      flex-wrap: wrap;
+      .footer-menu-item1 {
+        width: 50%;
+        text-align: left;
+        border: none;
+        padding-right: 0;
+        margin: 0 0 8px 0;
+      }
+      .footer-menu-item2 {
+        width: 50%;
+        text-align: left;
+        border: none;
+        padding-right: 0;
+        margin-right: 0;
+      }
+      .footer-menu-item3 {
+        width: 50%;
+        text-align: left;
+      }
+    }
+  }
+  .footer-end {
+    font-size: $fontsize-xs;
+    color: $white;
+    background-color: $black;
+    line-height: 1;
+    padding: 16px;
+  }
+}

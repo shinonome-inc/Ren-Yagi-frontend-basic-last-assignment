@@ -10,24 +10,21 @@
   }
   .events {
     width: 50%;
-    .event-list {
-      .event-card {
-        .event-content {
-          height: 147px;
-        }
-      }
-    }
   }
   @media screen and (max-width: $breakpoint-md) {
     display: block;
     margin: 0;
     .news {
+      width: 100%;
       margin-bottom: 35px;
       .news-and-events-title {
         & > h2 {
           font-size: $fontsize-l;
         }
       }
+    }
+    .events {
+      width: 100%;
     }
   }
 }

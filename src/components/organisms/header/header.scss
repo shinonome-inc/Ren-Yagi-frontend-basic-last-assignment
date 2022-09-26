@@ -30,57 +30,55 @@
         position: absolute;
         top: 65px;
         width: 100%;
-        .menu-item1 {
-          padding: 15px 16px;
-          background-color: $black;
-          font-size: $fontsize-s;
-          border-radius: 0;
-          .menu-item1-link {
+        .menu-item1-link {
+          text-decoration: none;
+          .menu-item1 {
+            padding: 15px 16px;
+            background-color: $black;
+            font-size: $fontsize-s;
+            border-radius: 0;
             color: $white;
-            text-decoration: none;
           }
         }
-        .menu-item2 {
-          padding: 15px 16px;
-          background-color: $black;
-          font-size: $fontsize-s;
-          position: relative;
-          .menu-item2-link {
-            color: $white;
-            text-decoration: none;
-          }
-          .consept-icon {
-            position: absolute;
-            top: 12px;
-            right: 16px;
+        .menu-item2-link {
+          text-decoration: none;
+          .menu-item2 {
+            padding: 15px 16px;
             background-color: $black;
-            outline: none;
+            font-size: $fontsize-s;
+            position: relative;
+            color: $white;
           }
-          .collapse2 {
-            .consept-menu {
-              position: relative;
-              top: 12px;
+        }
+        .consept-icon {
+          position: absolute;
+          top: 65px;
+          right: 16px;
+          background-color: $black;
+          outline: none;
+        }
+        .collapse2 {
+          .consept-menu {
+            .consept-menu-item-link {
+              text-decoration: none;
               .consept-menu-item {
-                padding: 15px 12px;
+                padding: 15px 28px;
                 background-color: $black;
                 font-size: $fontsize-s;
                 border-radius: 0;
-                .consept-menu-item-link {
-                  color: $white;
-                  text-decoration: none;
-                }
+                color: $white;
               }
             }
           }
         }
-        .menu-item3 {
-          padding: 15px 16px;
-          background-color: $black;
-          font-size: $fontsize-s;
-          border-radius: 0;
-          .menu-item3-link {
+        .menu-item3-link {
+          text-decoration: none;
+          .menu-item3 {
+            padding: 15px 16px;
+            background-color: $black;
+            font-size: $fontsize-s;
+            border-radius: 0;
             color: $white;
-            text-decoration: none;
           }
         }
       }
@@ -102,11 +100,10 @@
     .menu-xl {
       display: flex;
       justify-content: flex-end;
-      text-align: right;
       position: relative;
-      bottom: 25px;
+      bottom: 70px;
       .menu-list-xl1 {
-        margin-right: 40px;
+        padding: 45px 20px;
         color: $white;
         text-decoration: none;
         transition: 0.2s;
@@ -115,7 +112,7 @@
         }
       }
       .menu-list-xl2 {
-        margin-right: 40px;
+        padding: 45px 20px;
         .menu-list-link-xl2 {
           color: $white;
           text-decoration: none;
@@ -141,6 +138,7 @@
                 right: 20px;
                 width: 220px;
                 height: 56px;
+                color: $white;
                 background-color: $black;
                 border-radius: 0;
                 padding: 18px;
@@ -154,7 +152,8 @@
         }
       }
       .menu-list-xl3 {
-        margin-right: 50px;
+        padding: 45px 20px;
+        margin-right: 30px;
         color: $white;
         text-decoration: none;
         transition: 0.2s;

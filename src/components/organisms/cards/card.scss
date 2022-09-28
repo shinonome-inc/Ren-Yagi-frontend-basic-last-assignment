@@ -1,0 +1,29 @@
+@use "../../variables" as *;
+@use "../../molecules/card/card.scss" as *;
+.cards {
+  margin-bottom: 0;
+  .cards-box {
+    .card-col {
+      margin-bottom: 100px;
+      @media screen and (max-width: $breakpoint-md) {
+        margin-bottom: 40px;
+      }
+      .card {
+        height: 100%;
+        gap: 24px;
+        @media screen and (max-width: $breakpoint-md) {
+          height: auto;
+        }
+        .card-text {
+          margin: 0 35px;
+          @media screen and (max-width: $breakpoint-lg) {
+            margin: 0 46px;
+          }
+        }
+        .button {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

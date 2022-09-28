@@ -1,6 +1,5 @@
 @use "../../variables" as *;
 .header {
-  position: relative;
   .header-lg {
     height: 65px;
     background-color: $black;
@@ -15,9 +14,8 @@
       margin-top: 19.72px;
     }
     .hamburgar-icon {
-      position: absolute;
-      top: 20px;
-      right: 0;
+      position: relative;
+      bottom: 20px;
       border: none;
       background-color: $black;
       margin: 0px 16px 3px auto;
@@ -27,8 +25,6 @@
     }
     .collapse1 {
       .menu {
-        position: absolute;
-        top: 65px;
         width: 100%;
         .menu-item1-link {
           text-decoration: none;
@@ -46,14 +42,15 @@
             padding: 15px 16px;
             background-color: $black;
             font-size: $fontsize-s;
-            position: relative;
             color: $white;
           }
         }
         .consept-icon {
-          position: absolute;
-          top: 65px;
-          right: 16px;
+          width: 26px;
+          height: 26px;
+          margin: 0 27px 0 auto;
+          position: relative;
+          bottom: 42px;
           background-color: $black;
           outline: none;
         }
@@ -62,6 +59,8 @@
             .consept-menu-item-link {
               text-decoration: none;
               .consept-menu-item {
+                position: relative;
+                bottom: 26px;
                 padding: 15px 28px;
                 background-color: $black;
                 font-size: $fontsize-s;
@@ -74,6 +73,8 @@
         .menu-item3-link {
           text-decoration: none;
           .menu-item3 {
+            position: relative;
+            bottom: 26px;
             padding: 15px 16px;
             background-color: $black;
             font-size: $fontsize-s;

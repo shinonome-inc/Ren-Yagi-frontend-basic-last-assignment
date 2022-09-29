@@ -19,11 +19,10 @@
     }
   }
   @media screen and (max-width: $breakpoint-md) {
-    flex-flow: column;
+    flex-direction: column;
     .news {
       width: 100%;
       padding-right: 0;
-      margin-bottom: 35px;
       .news-and-events-title {
         & > h2 {
           font-size: $fontsize-l;

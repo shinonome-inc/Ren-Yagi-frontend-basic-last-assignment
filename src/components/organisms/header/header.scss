@@ -46,21 +46,22 @@
           }
         }
         .consept-icon {
+          display: flex;
+          margin: 0px 28px 3px auto;
           width: 26px;
           height: 26px;
-          margin: 0 27px 0 auto;
-          position: relative;
-          bottom: 42px;
           background-color: $black;
           outline: none;
+          position: relative;
+          bottom: 43px;
         }
         .collapse2 {
+          position: relative;
+          bottom: 29px;
           .consept-menu {
             .consept-menu-item-link {
               text-decoration: none;
               .consept-menu-item {
-                position: relative;
-                bottom: 26px;
                 padding: 15px 28px;
                 background-color: $black;
                 font-size: $fontsize-s;
@@ -72,9 +73,9 @@
         }
         .menu-item3-link {
           text-decoration: none;
+          position: relative;
+          bottom: 29px;
           .menu-item3 {
-            position: relative;
-            bottom: 26px;
             padding: 15px 16px;
             background-color: $black;
             font-size: $fontsize-s;
@@ -113,11 +114,13 @@
         }
       }
       .menu-list-xl2 {
-        padding: 45px 20px;
         .menu-list-link-xl2 {
+          position: relative;
+          top: 46px;
           color: $white;
           text-decoration: none;
           transition: 0.2s;
+          padding: 45px 20px;
         }
         .plan-xl {
           display: none;
@@ -135,7 +138,7 @@
               .plan-item-xl {
                 display: flex;
                 position: relative;
-                top: 34px;
+                top: 79px;
                 right: 20px;
                 width: 220px;
                 height: 56px;

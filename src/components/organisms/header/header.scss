@@ -6,16 +6,16 @@
     @media screen and (min-width: $breakpoint-xl) {
       display: none;
     }
-    .header-img {
+    .header-img-link {
+      padding: 19.72px 16px;
       position: relative;
-      left: 16px;
-      width: 120px;
-      height: 20.56px;
-      margin-top: 19.72px;
+      top: 19.72px;
+      .header-img {
+        width: 120px;
+        height: 20.56px;
+      }
     }
     .hamburgar-icon {
-      position: relative;
-      bottom: 20px;
       border: none;
       background-color: $black;
       margin: 0px 16px 3px auto;
@@ -24,6 +24,8 @@
       flex-direction: column;
     }
     .collapse1 {
+      position: relative;
+      top: 17px;
       .menu {
         width: 100%;
         .menu-item1-link {
@@ -92,18 +94,20 @@
     @media screen and (max-width: $breakpoint-xl) {
       display: none;
     }
-    .header-img-xl {
-      width: 140px;
-      height: 23.99px;
+    .header-img-link-xl {
+      padding: 33.01px 30px;
       position: relative;
-      left: 30px;
-      margin-top: 33.01px;
+      top: 33.01px;
+      .header-img-xl {
+        width: 140px;
+        height: 23.99px;
+      }
     }
     .menu-xl {
       display: flex;
       justify-content: flex-end;
       position: relative;
-      bottom: 70px;
+      bottom: 35px;
       .menu-list-xl1 {
         padding: 45px 20px;
         color: $white;
@@ -138,7 +142,7 @@
               .plan-item-xl {
                 display: flex;
                 position: relative;
-                top: 79px;
+                top: 76px;
                 right: 20px;
                 width: 220px;
                 height: 56px;

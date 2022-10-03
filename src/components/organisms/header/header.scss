@@ -16,12 +16,10 @@
       }
     }
     .hamburgar-icon {
-      border: none;
-      background-color: $black;
-      margin: 0px 16px 3px auto;
-      outline: none;
       display: flex;
-      flex-direction: column;
+      border: none;
+      margin: 0 16px 3px auto;
+      background-color: $black;
     }
     .collapse1 {
       position: relative;
@@ -34,7 +32,6 @@
             padding: 15px 16px;
             background-color: $black;
             font-size: $fontsize-s;
-            border-radius: 0;
             color: $white;
           }
         }
@@ -48,18 +45,15 @@
           }
         }
         .consept-icon {
-          display: flex;
-          margin: 0px 28px 3px auto;
-          width: 26px;
-          height: 26px;
+          border: none;
+          margin: 0 16px 3px auto;
           background-color: $black;
-          outline: none;
           position: relative;
           bottom: 43px;
         }
         .collapse2 {
           position: relative;
-          bottom: 29px;
+          bottom: 31px;
           .consept-menu {
             .consept-menu-item-link {
               text-decoration: none;
@@ -67,7 +61,6 @@
                 padding: 15px 28px;
                 background-color: $black;
                 font-size: $fontsize-s;
-                border-radius: 0;
                 color: $white;
               }
             }
@@ -76,12 +69,11 @@
         .menu-item3-link {
           text-decoration: none;
           position: relative;
-          bottom: 29px;
+          bottom: 31px;
           .menu-item3 {
             padding: 15px 16px;
             background-color: $black;
             font-size: $fontsize-s;
-            border-radius: 0;
             color: $white;
           }
         }
@@ -140,7 +132,6 @@
               color: $white;
               text-decoration: none;
               .plan-item-xl {
-                display: flex;
                 position: relative;
                 top: 76px;
                 right: 20px;
@@ -148,7 +139,6 @@
                 height: 56px;
                 color: $white;
                 background-color: $black;
-                border-radius: 0;
                 padding: 18px;
                 transition: 0.2s;
                 &:hover {

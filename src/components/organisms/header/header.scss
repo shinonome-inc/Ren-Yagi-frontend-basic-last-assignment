@@ -18,7 +18,7 @@
     .hamburgar-icon {
       display: flex;
       border: none;
-      margin: 0 16px 3px auto;
+      margin: 0 16px 0 auto;
       background-color: $black;
     }
     .collapse1 {
@@ -46,14 +46,14 @@
         }
         .consept-icon {
           border: none;
-          margin: 0 16px 3px auto;
+          margin: 0 16px 0 auto;
           background-color: $black;
           position: relative;
           bottom: 43px;
         }
         .collapse2 {
           position: relative;
-          bottom: 31px;
+          bottom: 29px;
           .consept-menu {
             .consept-menu-item-link {
               text-decoration: none;
@@ -69,7 +69,7 @@
         .menu-item3-link {
           text-decoration: none;
           position: relative;
-          bottom: 31px;
+          bottom: 29px;
           .menu-item3 {
             padding: 15px 16px;
             background-color: $black;

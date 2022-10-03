@@ -1,15 +1,15 @@
 @use "../../variables" as *;
 .header {
   .header-lg {
-    height: 65px;
+    height: 60px;
     background-color: $black;
     @media screen and (min-width: $breakpoint-xl) {
       display: none;
     }
     .header-img-link {
-      padding: 19.72px 16px;
+      padding: 19.8px 16px;
       position: relative;
-      top: 19.72px;
+      top: 18.5px;
       .header-img {
         width: 120px;
         height: 20.56px;
@@ -18,12 +18,15 @@
     .hamburgar-icon {
       display: flex;
       border: none;
+      outline: none;
       margin: 0 16px 0 auto;
       background-color: $black;
+      position: relative;
+      bottom: 2px;
     }
     .collapse1 {
       position: relative;
-      top: 17px;
+      top: 15px;
       .menu {
         width: 100%;
         .menu-item1-link {
@@ -46,6 +49,7 @@
         }
         .consept-icon {
           border: none;
+          outline: none;
           margin: 0 16px 0 auto;
           background-color: $black;
           position: relative;
@@ -82,26 +86,28 @@
   }
   .header-xl {
     height: 90px;
+
     background-color: $black_50;
     @media screen and (max-width: $breakpoint-xl) {
       display: none;
     }
     .header-img-link-xl {
-      padding: 33.01px 30px;
+      padding: 34px 30px;
       position: relative;
-      top: 33.01px;
+      top: 33.25px;
       .header-img-xl {
         width: 140px;
         height: 23.99px;
       }
     }
     .menu-xl {
+      height: 90px;
       display: flex;
       justify-content: flex-end;
       position: relative;
-      bottom: 35px;
+      bottom: 25.5px;
       .menu-list-xl1 {
-        padding: 45px 20px;
+        padding: 34px 20px;
         color: $white;
         text-decoration: none;
         transition: 0.2s;
@@ -112,11 +118,11 @@
       .menu-list-xl2 {
         .menu-list-link-xl2 {
           position: relative;
-          top: 46px;
+          top: 34px;
           color: $white;
           text-decoration: none;
           transition: 0.2s;
-          padding: 45px 20px;
+          padding: 35px 20px;
         }
         .plan-xl {
           display: none;
@@ -133,7 +139,7 @@
               text-decoration: none;
               .plan-item-xl {
                 position: relative;
-                top: 76px;
+                top: 66px;
                 right: 20px;
                 width: 220px;
                 height: 56px;
@@ -150,7 +156,7 @@
         }
       }
       .menu-list-xl3 {
-        padding: 45px 20px;
+        padding: 35px 20px;
         margin-right: 30px;
         color: $white;
         text-decoration: none;

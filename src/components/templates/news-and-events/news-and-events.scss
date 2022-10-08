@@ -1,9 +1,9 @@
 @use "../../variables" as *;
 @use "../../organisms/news/news.scss" as *;
 @use "../../organisms/events/events.scss" as *;
-.newsandevents {
+.news-and-events {
   display: flex;
-  padding: 56px 16px 94px;
+  padding: 56px 16px 92px;
   background-color: $white_smoke;
   .news {
     width: 50%;
@@ -22,7 +22,7 @@
   }
   @media screen and (max-width: $breakpoint-lg) {
     flex-direction: column;
-    padding: 65.5px 16px 101.5px;
+    padding: 56px 16px 94px;
     .news {
       width: 100%;
       padding-right: 0;

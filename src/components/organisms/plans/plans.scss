@@ -1,8 +1,9 @@
 @use "../../variables" as *;
 @use "../../molecules/message/message.scss" as *;
 .organisms-plan {
+  padding: 56px 20px 0;
   .message {
-    padding: 56px 0 32px;
+    padding: 0 0 32px;
     .title {
       color: $orange_bistre;
       margin-bottom: 6px;

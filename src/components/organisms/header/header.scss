@@ -1,0 +1,170 @@
+@use "../../variables" as *;
+.header {
+  .header-lg {
+    height: 60px;
+    background-color: $black;
+    @media screen and (min-width: $breakpoint-xl) {
+      display: none;
+    }
+    .header-img-link {
+      padding: 19.8px 16px;
+      position: relative;
+      top: 18.5px;
+      .header-img {
+        width: 120px;
+        height: 20.56px;
+      }
+    }
+    .hamburgar-icon {
+      display: flex;
+      border: none;
+      outline: none;
+      margin: 0 16px 0 auto;
+      background-color: $black;
+      position: relative;
+      bottom: 2px;
+    }
+    .collapse1 {
+      position: relative;
+      top: 15px;
+      .menu {
+        width: 100%;
+        .menu-item1-link {
+          text-decoration: none;
+          .menu-item1 {
+            padding: 15px 16px;
+            background-color: $black;
+            font-size: $fontsize-s;
+            color: $white;
+          }
+        }
+        .menu-item2-link {
+          text-decoration: none;
+          .menu-item2 {
+            padding: 15px 16px;
+            background-color: $black;
+            font-size: $fontsize-s;
+            color: $white;
+          }
+        }
+        .consept-icon {
+          border: none;
+          outline: none;
+          margin: 0 16px 0 auto;
+          background-color: $black;
+          position: relative;
+          bottom: 43px;
+        }
+        .collapse2 {
+          position: relative;
+          bottom: 29px;
+          .consept-menu {
+            .consept-menu-item-link {
+              text-decoration: none;
+              .consept-menu-item {
+                padding: 15px 28px;
+                background-color: $black;
+                font-size: $fontsize-s;
+                color: $white;
+              }
+            }
+          }
+        }
+        .menu-item3-link {
+          text-decoration: none;
+          position: relative;
+          bottom: 29px;
+          .menu-item3 {
+            padding: 15px 16px;
+            background-color: $black;
+            font-size: $fontsize-s;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  .header-xl {
+    height: 90px;
+
+    background-color: $black_50;
+    @media screen and (max-width: $breakpoint-xl) {
+      display: none;
+    }
+    .header-img-link-xl {
+      padding: 34px 30px;
+      position: relative;
+      top: 33.25px;
+      .header-img-xl {
+        width: 140px;
+        height: 23.99px;
+      }
+    }
+    .menu-xl {
+      height: 90px;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      bottom: 25.5px;
+      .menu-list-xl1 {
+        padding: 34px 20px;
+        color: $white;
+        text-decoration: none;
+        transition: 0.2s;
+        &:hover {
+          color: $gray_nobel;
+        }
+      }
+      .menu-list-xl2 {
+        .menu-list-link-xl2 {
+          position: relative;
+          top: 34px;
+          color: $white;
+          text-decoration: none;
+          transition: 0.2s;
+          padding: 35px 20px;
+        }
+        .plan-xl {
+          display: none;
+        }
+        &:hover {
+          .menu-list-link-xl2 {
+            color: $gray_nobel;
+          }
+          .plan-xl {
+            display: block;
+            position: fixed;
+            .plan-item-link-xl {
+              color: $white;
+              text-decoration: none;
+              .plan-item-xl {
+                position: relative;
+                top: 66px;
+                right: 20px;
+                width: 220px;
+                height: 56px;
+                color: $white;
+                background-color: $black;
+                padding: 18px;
+                transition: 0.2s;
+                &:hover {
+                  background-color: $orange_bistre;
+                }
+              }
+            }
+          }
+        }
+      }
+      .menu-list-xl3 {
+        padding: 35px 20px;
+        margin-right: 30px;
+        color: $white;
+        text-decoration: none;
+        transition: 0.2s;
+        &:hover {
+          color: $gray_nobel;
+        }
+      }
+    }
+  }
+}

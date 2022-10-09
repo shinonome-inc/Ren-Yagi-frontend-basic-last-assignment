@@ -1,5 +1,6 @@
 @use "../../variables" as *;
 .header {
+  z-index: 1;
   .header-lg {
     height: 60px;
     background-color: $black;

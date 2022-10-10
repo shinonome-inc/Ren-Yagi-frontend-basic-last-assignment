@@ -29,6 +29,7 @@
     color: $white;
     background-color: $black;
     padding: 52px auto 74px;
+    margin-bottom: 30px;
     @media screen and (max-width: $breakpoint-lg) {
       padding: 32px auto;
     }

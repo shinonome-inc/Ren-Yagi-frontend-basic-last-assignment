@@ -140,7 +140,8 @@
               text-decoration: none;
               .plan-item-xl {
                 position: relative;
-                top: 66px;
+                z-index: 3;
+                top: 66.5px;
                 right: 20px;
                 width: 220px;
                 height: 56px;

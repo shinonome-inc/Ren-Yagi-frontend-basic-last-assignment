@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 @use "../../molecules/message/message.scss" as *;
 .top {
+  margin-bottom: 30px;
   .top-title {
     position: relative;
     .top-img {
@@ -29,7 +30,6 @@
     color: $white;
     background-color: $black;
     padding: 52px auto 74px;
-    margin-bottom: 30px;
     @media screen and (max-width: $breakpoint-lg) {
       padding: 32px auto;
     }

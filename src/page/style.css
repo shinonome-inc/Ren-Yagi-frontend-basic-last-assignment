@@ -2,7 +2,7 @@ body {
   font-family: Roboto, "Noto Sans JP", sans-serif;
 }
 section {
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 .button {
   display: flex;
@@ -118,23 +118,6 @@ section {
     line-height: 2;
   }
 }
-.news-and-events-more {
-  align-self: flex-end;
-  cursor: pointer;
-  color: #000;
-  text-decoration: none;
-  font-size: 14px;
-  transition: color 0.2s ease;
-  display: inline-flex;
-  align-items: center;
-}
-.news-and-events-more:hover {
-  color: #999;
-  text-decoration: none;
-}
-.news-and-events-more > i {
-  margin-left: 16px;
-}
 .news-and-events-title > h2 {
   display: flex;
   align-items: center;
@@ -151,6 +134,23 @@ section {
   font-size: 16px;
   font-family: Roboto, "Noto Sans JP", sans-serif;
   font-weight: 400;
+  margin-left: 16px;
+}
+.news-and-events-more {
+  align-self: flex-end;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+.news-and-events-more:hover {
+  color: #999;
+  text-decoration: none;
+}
+.news-and-events-more > i {
   margin-left: 16px;
 }
 .plan {
@@ -709,6 +709,7 @@ section {
 .header .header-xl .menu-xl .menu-list-xl2:hover .plan-xl {
   display: block;
   position: fixed;
+  z-index: 3;
 }
 .header .header-xl .menu-xl .menu-list-xl2:hover .plan-xl .plan-item-link-xl {
   color: #fff;
@@ -722,7 +723,7 @@ section {
   .plan-item-link-xl
   .plan-item-xl {
   position: relative;
-  top: 66px;
+  top: 66.5px;
   right: 20px;
   width: 220px;
   height: 56px;

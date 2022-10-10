@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 @use "../../molecules/message/message.scss" as *;
 .top {
+  z-index: 2;
   margin-bottom: 30px;
   .top-title {
     position: relative;

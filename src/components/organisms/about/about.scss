@@ -1,7 +1,7 @@
 @use "../../variables" as *;
 @use "../../molecules/message/message.scss" as *;
 .about {
-  margin: 40px auto;
+  margin: 40px 20px;
   .about-img {
     display: flex;
     @media screen and (max-width: $breakpoint-md) {

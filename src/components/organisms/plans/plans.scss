@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 @use "../../molecules/message/message.scss" as *;
 .organisms-plan {
+  padding: 56px 20px 0;
   .message {
     padding: 0 0 32px;
     .title {
@@ -30,7 +31,7 @@
     justify-content: center;
     margin: 40px 0 100px;
     @media screen and (max-width: $breakpoint-md) {
-      margin: 0 0 15px;
+      margin: 0;
     }
   }
 }

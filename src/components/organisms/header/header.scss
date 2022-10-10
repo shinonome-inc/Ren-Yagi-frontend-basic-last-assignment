@@ -26,6 +26,7 @@
     }
     .collapse1 {
       position: relative;
+      z-index: 2;
       top: 15px;
       .menu {
         width: 100%;
@@ -86,7 +87,6 @@
   }
   .header-xl {
     height: 90px;
-
     background-color: $black_50;
     @media screen and (max-width: $breakpoint-xl) {
       display: none;
@@ -134,12 +134,13 @@
           .plan-xl {
             display: block;
             position: fixed;
+            z-index: 3;
             .plan-item-link-xl {
               color: $white;
               text-decoration: none;
               .plan-item-xl {
                 position: relative;
-                top: 66px;
+                top: 66.5px;
                 right: 20px;
                 width: 220px;
                 height: 56px;

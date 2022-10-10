@@ -3,7 +3,7 @@
 @use "../../organisms/events/events.scss" as *;
 .news-and-events {
   display: flex;
-  padding: 56px 16px 92px;
+  padding: 56px 20px 92px;
   background-color: $white_smoke;
   .news {
     width: 50%;
@@ -22,7 +22,7 @@
   }
   @media screen and (max-width: $breakpoint-lg) {
     flex-direction: column;
-    padding: 56px 16px 94px;
+    padding: 56px 20px 94px;
     .news {
       width: 100%;
       padding-right: 0;

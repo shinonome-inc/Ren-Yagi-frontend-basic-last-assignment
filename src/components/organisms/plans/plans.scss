@@ -1,7 +1,7 @@
 @use "../../variables" as *;
 @use "../../molecules/message/message.scss" as *;
 .organisms-plan {
-  margin-top: 56px;
+  padding: 56px 20px 0;
   .message {
     padding: 0 0 32px;
     .title {

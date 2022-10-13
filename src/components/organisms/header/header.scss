@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 .header {
   .header-lg {
+    position: relative;
     z-index: 2;
     height: 60px;
     background-color: $black;
@@ -87,6 +88,7 @@
     }
   }
   .header-xl {
+    position: relative;
     z-index: 2;
     height: 90px;
     background-color: $black_50;
@@ -140,12 +142,12 @@
             position: relative;
             top: 66px;
             right: 20px;
-            width: 220px;
             .plan-item-link-xl {
               color: $white;
               text-decoration: none;
               .plan-item-xl {
                 height: 56px;
+                width: 220px;
                 color: $white;
                 background-color: $black;
                 padding: 18px;

@@ -2,6 +2,9 @@
 @use "../../molecules/message/message.scss" as *;
 .top {
   position: relative;
+  @media screen and (min-width: $breakpoint-lg) {
+    bottom: 60px;
+  }
   @media screen and (min-width: $breakpoint-xl) {
     bottom: 90px;
   }

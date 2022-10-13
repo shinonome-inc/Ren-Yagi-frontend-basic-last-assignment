@@ -120,6 +120,7 @@
         }
       }
       .menu-list-xl2 {
+        width: 110.81px;
         .menu-list-link-xl2 {
           position: relative;
           top: 34px;
@@ -137,14 +138,13 @@
           }
           .plan-xl {
             display: block;
-            position: fixed;
             z-index: 2;
+            position: relative;
+            top: 66px;
+            right: 20px;
             .plan-item-link-xl {
               color: $white;
               text-decoration: none;
-              position: relative;
-              top: 66px;
-              right: 20px;
               .plan-item-xl {
                 height: 56px;
                 width: 220px;

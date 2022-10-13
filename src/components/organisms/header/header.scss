@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 .header {
   .header-lg {
+    z-index: 2;
     height: 60px;
     background-color: $black;
     @media screen and (min-width: $breakpoint-xl) {
@@ -86,6 +87,7 @@
     }
   }
   .header-xl {
+    z-index: 2;
     height: 90px;
     background-color: $black_50;
     @media screen and (max-width: $breakpoint-xl) {
@@ -134,7 +136,7 @@
           .plan-xl {
             display: block;
             position: fixed;
-            z-index: 3;
+            z-index: 2;
             position: relative;
             top: 66px;
             right: 20px;

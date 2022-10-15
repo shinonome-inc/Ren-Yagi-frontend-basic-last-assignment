@@ -1,6 +1,8 @@
 @use "../../variables" as *;
 .header {
   .header-lg {
+    position: relative;
+    z-index: 2;
     height: 60px;
     background-color: $black;
     @media screen and (min-width: $breakpoint-xl) {
@@ -86,6 +88,8 @@
     }
   }
   .header-xl {
+    position: relative;
+    z-index: 2;
     height: 90px;
     background-color: $black_50;
     @media screen and (max-width: $breakpoint-xl) {
@@ -116,6 +120,7 @@
         }
       }
       .menu-list-xl2 {
+        width: 110.81px;
         .menu-list-link-xl2 {
           position: relative;
           top: 34px;
@@ -133,17 +138,16 @@
           }
           .plan-xl {
             display: block;
-            position: fixed;
-            z-index: 3;
+            z-index: 2;
+            position: relative;
+            top: 66px;
+            right: 20px;
             .plan-item-link-xl {
               color: $white;
               text-decoration: none;
               .plan-item-xl {
-                position: relative;
-                top: 66.5px;
-                right: 20px;
-                width: 220px;
                 height: 56px;
+                width: 220px;
                 color: $white;
                 background-color: $black;
                 padding: 18px;

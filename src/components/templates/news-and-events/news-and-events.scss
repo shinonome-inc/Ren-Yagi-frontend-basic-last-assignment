@@ -2,7 +2,7 @@
 @use "../../organisms/news/news.scss" as *;
 @use "../../organisms/events/events.scss" as *;
 .news-and-events {
-  padding: 56px 16px 92px;
+  padding: 56px 0 92px;
   background-color: $white_smoke;
   .newsandevents {
     display: flex;
